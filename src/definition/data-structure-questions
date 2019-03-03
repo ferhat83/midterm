@@ -1,27 +1,85 @@
 Please answer the below Data Structure Questions:
 
+
 why do we need data structure?
-A.
+Data structure are the way we use for organizing and storing data.
 
 
 What are the various operations that can be performed on different Data Structures?
+on data structures we can add, modify, delete data.
+
 List out the areas in which data structures are applied extensively?
+  -Compiler Design,
+  -Operating System,
+  -Database Management System,
+  -Statistical analysis package,
+  -Numerical Analysis,
+  -Graphics,
+  -Artificial Intelligence,
+  - Simulation.
+
 what is an Array?
+An array is a container object that can stock or holds a fixed number of values of a same single type.
+
 what is the difference between the Array and ArrayList?
+the difference is in array the number of value is fixed but not in array list.
+
 what is LinkedList?
+LinkedList is a class ho uses a doubly linked list to store elements(values). It provides a linked-list data structure.
+It inherits the AbstractList class and implements List and Deque interfaces.
+
 How is an Array different from Linked List?
+In array, each element is independent and can be accessed using it's index value. In case of a linked list,
+each element points to the next, previous, or maybe both nodes.
+
 what is queue?
+Queue is an  interface(data structure), providing first in, first out  (FIFO) and last in last out(lilo).
+it is implemented by linkedlist.
+
 what is stack?
+A Stack is a Last In First Out (LIFO) data structure. It supports two basic operations called push and pop.
+The push operation adds an element at the top of the stack, and the pop operation removes an element from
+the top of the stack.
+
 what is FIFO and LIFO?
+FIFO= first in first out.
+LIFO= last in first out.
+
 what is the order of complexity?
+Algorithmic complexity is concerned about how fast or slow particular algorithm performs. it define time taken
+by an algorithm without depending on the implementation details.
+
 what is the best case to search an element from an array?
+-Best case is the function which performs the minimum number of steps on input data of n elements.
+
 what is the worst case to search an element from an array?
+-Worst case is the function which performs the maximum number of steps on input data of size n.
+
 what is tree in data structure?
+A tree is a nonlinear data structure, compared to arrays, linked lists, stacks and queues which are linear
+data structures. A tree can be empty with no nodes or a tree is a structure consisting of one node called the
+root and zero or one or more subtrees.
+
 what is graph in data structure?
+A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also
+referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph
+
 what is the difference between the HashTable and HashMap?
+There are several differences between HashMap and Hashtable in Java: Hashtable is synchronized, whereas HashMap is not.
+This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform better than
+synchronized ones.  HashMap allows one null key and any number of null values.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+
 How HashMap works in java?
+HashMap in Java works on hashing principle. It is a data structure which allows us to store object and retrieve it in
+constant time O(1) provided we know the key. In hashing, hash functions are used to link key and value in HashMap.
+Objects are stored by calling put(key, value) method of HashMap and retrieved by calling get(key) method. When we
+call put method, hashcode() method of the key object is called so that hash function of the map can find a bucket
+location to store value object, which is actually an index of the internal array, known as the table
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+
 What are the different ways of copying an array into another array?
 What is difference between an array and a linked list?
 What is DFS and BFS?
