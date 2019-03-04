@@ -79,6 +79,7 @@ call put method, hashcode() method of the key object is called so that hash func
 location to store value object, which is actually an index of the internal array, known as the table
 
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+when a value(index) is negative or greater than or equal to the length of the array being indexed.
 
 What are the different ways of copying an array into another array?
 What is difference between an array and a linked list?
