@@ -65,7 +65,7 @@ public class UseMap {
 		}
 		ConnectToSqlDB connect = new ConnectToSqlDB();
 		connect.insertDataFromArrayToSqlTable(array,"numbers","numb");
-		
+
 
 
 	}

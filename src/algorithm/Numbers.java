@@ -47,6 +47,7 @@ public class Numbers {
         algo.bubbleSort(num);
         long bubbleSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
+
 		connectToSqlDB.insertDataFromArrayToSqlTable(num, "bubbleSort", "SortingNumbers");
 		List<String> number3 = connectToSqlDB.readDataBase("bubbleSort", "SortingNumbers");
 		printValue(number3);
