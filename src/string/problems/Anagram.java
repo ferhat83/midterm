@@ -1,12 +1,40 @@
 package string.problems;
 
-/**
- * Created by mrahman on 04/22/17.
- */
+import java.util.Arrays;
+
+
 public class Anagram {
 
-    public static void main(String[] args) {
-        //Write a Java Program to check if the two String are Anagram. Two String are called Anagram when there is
-        //same character but in different order.For example,"CAT" and "ACT", "ARMY" and "MARY".
+    static boolean areAnagram(char[] x, char[] y)
+    {
+        int n1 = x.length;
+        int n2 = y.length;
+
+        if (n1 != n2)
+            return false;
+
+        Arrays.sort(x);
+        Arrays.sort(y);
+
+        for (int i = 0; i < n1; i++)
+            if (x[i] != y[i])
+                return false;
+
+        return true;
     }
+
+    public static void main(String[] args) {
+
+
+        char x[] = { 't', 'e', 's', 't' };
+        char y[] = { 't', 't', 'e', 'w' };
+
+        if (areAnagram(x, y))
+            System.out.println("The two strings are"
+                    + " anagram of each other");
+        else
+            System.out.println("The two strings are not"
+                    + " anagram of each other");
+
+}
 }
