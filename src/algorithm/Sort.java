@@ -30,7 +30,7 @@ public class Sort {
         this.executionTime = executionTime;
         return list;
     }
-
+//******************************************************************************8
     public int[] insertionSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
@@ -56,7 +56,7 @@ public class Sort {
         this.executionTime = executionTime;
         return list;
     }
-
+//********************************************************8
     public int[] bubbleSort(int [] array){
         int [] list = array;
         //implement here
@@ -76,19 +76,45 @@ public class Sort {
 
         return list;
     }
-    
 
-    public int [] mergeSort(int [] array){
-        int [] list = array;
-        //implement here
+//**********************************************8
+    public void mergesort(int[] input) {
+        mergesort(input, 0, input.length - 1);
 
+        final long startTime = System.currentTimeMillis();
+        final long endTime = System.currentTimeMillis();
+        final long executionTime = endTime - startTime;
+        this.executionTime = executionTime;
 
-        
-        
-
-        return list;
     }
-    
+
+    private static void mergesort(int[] input, int start, int end) {
+
+// break problem into smaller structurally identical problems
+        int mid = (start + end) / 2;
+        if (start < end) { mergesort(input, start, mid);
+            mergesort(input, mid + 1, end); }
+// merge solved pieces to get solution to original problem
+        int i = 0, first = start, last = mid + 1;
+        int[] tmp = new int[end - start + 1];
+        while (first <= mid && last <= end) {
+            tmp[i++] = input[first] < input[last] ? input[first++] : input[last++];
+        }
+        while (first <= mid) {
+            tmp[i++] = input[first++];
+        }
+        while (last <= end) {
+            tmp[i++] = input[last++];
+        } i = 0; while (start <= end) {
+            input[start++] = tmp[i++];
+        }
+
+
+
+
+    }
+
+//*************************************
 
     public int [] quickSort(int [] array){
         int [] list = array;
@@ -98,7 +124,7 @@ public class Sort {
 
         return list;
     }
-    
+   //*******************************************************
     public int [] heapSort(int [] array){
         int [] list = array;
         //implement here
@@ -108,7 +134,7 @@ public class Sort {
         return list;
     }
 
-
+//*********************************************************
     public int [] bucketSort(int [] array){
         int [] list = array;
         //implement here
@@ -117,7 +143,7 @@ public class Sort {
 
         return list;
     }
-    
+   //*******************************************************
     public int [] shellSort(int [] array){
         int [] list = array;
         //implement here

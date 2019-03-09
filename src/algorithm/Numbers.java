@@ -43,10 +43,14 @@ public class Numbers {
 		List<String> number2 = connectToSqlDB.readDataBase("Insertion", "SortingNumbers");
 		printValue(number2);
 		randomize (num, n);
+
+
 		//By following above, Continue for rest of the Sorting Algorithm....
-        algo.bubbleSort(num);
+
+		// bubbleSort
+		algo.bubbleSort(num);
         long bubbleSortExecutionTime = algo.executionTime;
-		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
+		System.out.println("Total Execution Time of "+ num.length + " numbers in bubble Sort take: " + selectionSortExecutionTime + " milli sec");
 
 		connectToSqlDB.insertDataFromArrayToSqlTable(num, "bubbleSort", "SortingNumbers");
 		List<String> number3 = connectToSqlDB.readDataBase("bubbleSort", "SortingNumbers");
@@ -54,6 +58,17 @@ public class Numbers {
 		randomize (num, n);
 
 
+
+		// mergeSort
+
+		algo.mergesort(num);
+		long mergeSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of "+ num.length + " numbers in merge Sort take: " + mergeSortExecutionTime + " milli sec");
+
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "mergeSort", "SortingNumbers");
+		List<String> number4 = connectToSqlDB.readDataBase("mergeSort", "SortingNumbers");
+		printValue(number4);
+		randomize (num, n);
 
 
 
