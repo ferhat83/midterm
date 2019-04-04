@@ -1,4 +1,4 @@
-package json.parser;
+package json.perser;
 
 public class Employee {
 

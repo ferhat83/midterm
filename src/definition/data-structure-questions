@@ -82,12 +82,49 @@ What is ArrayIndexOutOfBoundsException in java? When it occurs?
 when a value(index) is negative or greater than or equal to the length of the array being indexed.
 
 What are the different ways of copying an array into another array?
+There are multiple ways to copy elements from one array in Java e.g. you can manually copy elements by using a loop,
+ create a clone of the array, use Arrays.copyOf() method or System.arrayCopy() to start copying elements from
+ one array to another in Java.
+
 What is difference between an array and a linked list?
+The major difference between Array and Linked list regards to their structure. Arrays are index based data structure
+where each element associated with an index. ... Furthermore, the link field holds the address of the next data item
+in the linked list. The address used to access a particular node is known as a pointer.
+
 What is DFS and BFS?
+The breadth first search (BFS) and the depth first search (DFS) are the two algorithms used for traversing and
+searching a node in a graph. They can also be used to find out whether a node is reachable from a given node or not.
+
 What is Recursion?
+Recursion is a basic programming technique you can use in Java, in which a method calls itself to solve some problem.
+A method that uses this technique is recursive. Many programming problems can be solved only by recursion,
+and some problems that can be solved by other techniques are better solved by recursion.
+
 What are linear and non linear data Structures?
+Key Differences Between Linear and Non-linear Data Structure
+In the linear data structure, the data is organized in a linear order in which elements are linked one after the other.
+As against, in the non-linear data structure the data elements are not stored in a sequential manner rather the elements
+are hierarchically related.
+The traversing of data in the linear data structure is easy as it can make all the data elements to be traversed in one
+ go, but at a time only one element is directly reachable. On the contrary, in the non-linear data structure, the nodes
+  are not visited sequentially and cannot be traversed in one go.
+Data elements are adjacently attached in the linear data structure, which means only two elements can be linked to two
+other elements while this is not the case in the non-linear data structure where one data element can be connected to numerous other elements.
+The linear data structures are easily implemented relative to the non-linear data structure.
+A single level of elements is incorporated in the linear data structure. Conversely, non-linear data structure involves multiple levels.
+Examples of the linear data structure are array, queue, stack, linked list, etc. In contrast, tree and graph are the examples of the non-linear data structure.
+The memory is utilized efficiently in the non-linear data structure where linear data structure tends to waste the memory.
+
 What is Big-(O)-notation?
+Definition: A theoretical measure of the execution of an algorithm, usually the time or memory needed, given the problem
+size n, which is usually the number of items. Informally, saying some equation f(n) = O(g(n)) means it is less than some
+ constant multiple of g(n). The notation is read, "f of n is big oh of g of n".
+
 Outlined different kind of sorting algorithm with time complexity?
+
+-Bubble Sort
+-Insertion Sort
+-Heap Sort
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.

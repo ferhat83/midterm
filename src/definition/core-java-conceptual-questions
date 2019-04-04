@@ -233,7 +233,7 @@ What are the testing Framework available in java?
 JUnit, REST Assured, Selenium, TestNG, Robot Framework...
 
 Difference between jUnit and testNG?
-testNG is more resent.
+testNG is more resent and have more features.
 
 What are the dependencies for this project?
 jeson
@@ -244,9 +244,14 @@ JAVAX
 javajeson
 mysql
 what is dependency injection in java?
+is a technique whereby one object (or static method) supplies the dependencies of another object. ... In Java, before
+we can use methods of other classes, we first need to create the object of that class (i.e. class A needs to
+create an instance of class B).
 
 What is static binding and dynamic binding?
-
+Static binding in Java occurs during compile time while dynamic binding occurs during runtime. private , final and
+static methods and variables use static binding and are bonded by compiler while virtual methods are bonded during
+runtime based upon runtime object.
 
 
 
